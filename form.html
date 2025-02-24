@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt an animal</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Adopt an Animal</h2>
+        <form action="submit_adoption.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="animal">Select an Animal:</label>
+            <select id="animal" name="animal" required>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="bird">Bird</option>
+            </select>
+            
+            <label for="reason">Reason for Adoption:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+            
+            <button type="submit">Adopt</button>
+        </form>
+    </div>
+</body>
+</html>
